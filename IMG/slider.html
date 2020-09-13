@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 97%;
+            height: 400px;
+            padding: 10px 20px;
+            text-align: center;
+            display: none;
+            /* overflow-x:hidden; */
+        }
+
+        button{
+            padding: 7px 10px;
+            background-color: blueviolet;
+            color: white; 
+            font-size: 20px;
+            width: 150px
+            /* margin: 0 auto; */
+        }
+
+        #control{
+            text-align: center;
+        }
+
+        #one{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" id="one">
+    <img src="https://wallpapercave.com/wp/wp3210388.jpg" id="two">
+    <img src="https://i.pinimg.com/originals/07/00/b5/0700b59b0a405697a65f09fb414e75fe.jpg" id="three">
+
+    <div id="control">
+        <button>PRE</button>
+        <button onclick="next()">NEXT</button>
+    <div>
+
+    <script>
+            var initial = 0;
+
+            function next(){
+                document.getElementById("two").style.display="block";
+                document.getElementById("one").style.display="none";
+            }
+
+    </script>
+</body>
+</html>
